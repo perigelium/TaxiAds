@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/black_absolute"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/default_progress_bar"
+        style="@style/SpinKitView.Large.Wave"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/white" />
+</FrameLayout>

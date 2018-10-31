@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.edisoninteractive.inrideads.Fragments.FragDisplayBlocks">
+
+    <TextView
+        android:id="@+id/tvFacesStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text=""
+        android:textColor="@color/black39"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="1dp"
+        android:layout_height="1dp"/>
+
+    <com.edisoninteractive.inrideads.Helpers.CameraSourcePreview
+        android:id="@+id/preview"
+        android:layout_width="1dp"
+        android:layout_height="1dp"/>
+
+    <com.edisoninteractive.inrideads.Helpers.GraphicOverlay
+        android:id="@+id/faceOverlay"
+        android:layout_width="1dp"
+        android:layout_height="1dp"/>
+
+    <FrameLayout
+        android:id="@+id/flAdsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"/>
+
+    <View
+        android:id="@+id/vAdminMenu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="start"/>
+
+</FrameLayout>

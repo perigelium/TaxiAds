@@ -1,0 +1,64 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.edisoninteractive.inrideads.Fragments.FragBindBluetoothDevice">
+
+    <LinearLayout
+        android:id="@+id/block_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginRight="100dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/admin_menu_btn_selector"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:padding="8dp"
+            android:layout_margin="8dp"
+            android:textColor="@color/white"
+            android:text="Back"/>
+
+        <Button
+            android:id="@+id/btnDiscoverable_on_off"
+            style="@style/menu_button"
+            android:text="Enable Discoverable"/>
+
+        <Button
+            android:id="@+id/btn_refresh_list"
+            style="@style/menu_button"
+            android:text="Refresh"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/block_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/block_1"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Connected Devices:"/>
+
+        <ListView
+            android:id="@+id/lvConnectedDevices"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

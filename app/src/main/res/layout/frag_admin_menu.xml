@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btn_close"
+            style="@style/menu_button"
+            android:layout_width="wrap_content"
+            android:text="@string/close"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/btn_close"
+            android:layout_alignTop="@id/btn_close"
+            android:gravity="center"
+            android:text="@string/remote_admin_menu"
+            android:textColor="@color/grey9C"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_register_by_comp_code"
+                    style="@style/menu_button"
+                    android:text="@string/register_by_company_code"/>
+
+                <Button
+                    android:id="@+id/btn_update_content"
+                    style="@style/menu_button"
+                    android:text="@string/update_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_register_by_install_code"
+                    style="@style/menu_button"
+                    android:text="Register by group code"/>
+
+                <Button
+                    android:id="@+id/btn_reboot_screen"
+                    style="@style/menu_button"
+                    android:text="@string/reboot_screen"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_open_bluetooth"
+                    style="@style/menu_button"
+                    android:text="@string/open_bluetooth"/>
+
+                <Button
+                    android:id="@+id/btn_setup_remote_access"
+                    android:visibility="invisible"
+                    style="@style/menu_button"
+                    android:text="@string/setup_remote_access"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btn_show_knox_status"
+                    style="@style/menu_button"
+                    android:text="@string/show_knox_status"/>
+
+                <Button
+                    android:id="@+id/btn_close_app"
+                    style="@style/menu_button"
+                    android:text="@string/close_app"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TableLayout
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TableRow>
+
+                <Button
+                    style="@style/menu_button"
+                    android:text="@string/register_by_company_code"/>
+
+                <Button
+                    style="@style/menu_button"
+                    android:text="@string/update_content"/>
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    style="@style/menu_button"
+                    android:text="@string/close_app"/>
+
+                <Button
+                    style="@style/menu_button"
+                    android:text="@string/reboot_screen"/>
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    style="@style/menu_button"
+                    android:text="@string/show_knox_status"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <ImageView
+            android:layout_width="143dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="15dp"
+            android:background="@drawable/logo_bw_edison_interactive"/>
+
+        <ImageView
+            android:id="@+id/iv_qr_code"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</layout>

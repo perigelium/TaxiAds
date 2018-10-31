@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">InRideAds</string>
+    <string name="msg_CheckInternetConnection">Check internet connection</string>
+    <string name="msg_ServerAnswerNotReceived">Server answer not received</string>
+    <string name="msg_ServerError">Server error</string>
+
+    <string name="please_enter_admin_password">Please enter admin password</string>
+    <string name="password">Password:</string>
+    <string name="back">Back</string>
+    <string name="login">Login</string>
+    <string name="error_password">Error</string>
+    <string name="invalid_password">Invalid password</string>
+    <string name="ok">OK</string>
+    <string name="remote_admin_menu">Remote admin menu</string>
+    <string name="close">Close</string>
+
+    <!-- admin menu buttons -->
+    <string name="register_by_company_code">Register by company code</string>
+    <string name="update_content">Update content</string>
+    <string name="close_app">Close app</string>
+    <string name="reboot_screen">Reboot screen</string>
+    <string name="open_bluetooth">Bluetooth Pair Devices</string>
+    <string name="setup_remote_access">Setup remote access</string>
+
+    <!-- register via comp code -->
+    <string name="register_comp_code_url">https://api.taxiinteractive.com/units/company-register</string>
+    <string name="register_via_comp_code">Register via comp code</string>
+    <string name="company_code">Company code:</string>
+    <string name="cancel">Cancel</string>
+    <string name="register">Register</string>
+    <string name="required_field">This field is required!</string>
+    <string name="unable_to_perform_registration">Unable to perform registration...</string>
+
+    <string name="registering_this_screen">Registering this screen</string>
+    <string name="this_can_take_up_to_a_minute">This can take up to a minute.</string>
+    <string name="thanks_for_your_patience">Thanks for your patience.</string>
+
+    <string name="registration_failed">REGISTRATION FAILED</string>
+    <string name="error_no_company_for_code">Error: No Company for the supplied company code.</string>
+
+    <string name="registration_succeeded">REGISTRATION SUCCEEDED</string>
+    <string name="thank_you_for_patience">Thank you for patience.</string>
+    <string name="show_knox_status">Show Knox Status</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
